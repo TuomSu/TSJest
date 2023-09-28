@@ -1,0 +1,24 @@
+{
+  "tests": [
+    {
+      "name": "Osa 1 Omien testien kirjoittaminen",
+      "setup": "npm install",
+      "run": "npm test || true",
+      "input": "",
+      "output": "dateFormatter.ts",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 2
+    },
+    {
+      "name": "Osa 2 Funktiossa olevien virheiden korjaaminen",
+      "setup": "cat .github/tests.txt | base64 --decode > src/tests/allBugsNeedToBeFixed.test.ts",
+      "run": "npm test",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 3
+    }
+  ]
+}
