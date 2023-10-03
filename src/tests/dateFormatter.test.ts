@@ -15,6 +15,13 @@ const dayname = result.substring(0,9);
 assert.equal(dayname, 'maanantai');
 });
 
+test('testing if dayname is translated into Finnish', () =>{
+    const date = new Date('2023-10-01');
+    const result = finnishDateString(date);
+    const dayname = result.substring(0,9);
+    assert.equal(dayname, 'sunnuntai');
+    });
+
 test('testing if monthname is translated to Finnish', () =>{
     const date = new Date('2023-10-02');
     const result = finnishDateString(date);
